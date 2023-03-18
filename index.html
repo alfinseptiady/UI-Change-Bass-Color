@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Change Bass Color</title>
+  </head>
+  <body>
+    <img
+      src="https://assets.codepen.io/72787/Bass+Gitar+red.png"
+      alt="Bass Guitar"
+      id="guitar"
+    />
+    <button id="color-button" class="cta">
+      <span>Change Color</span>
+      <svg viewBox="0 0 13 10" height="10px" width="15px">
+        <path d="M1,5 L11,5"></path>
+        <polyline points="8 1 12 5 8 9"></polyline>
+      </svg>
+    </button>
+
+    <audio
+      src="https://assets.codepen.io/72787/Light_Sound+-+Bass+Guitar+Logo+%28short+2%29.mp3"
+      id="bg-music"
+      autoplay
+      loop
+    ></audio>
+
+    <div class="body">
+      <button class="btn btn-hover" onclick="toggleMusic()">
+        <span class="btn-text">Toggle Music</span>
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
